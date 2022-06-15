@@ -4,6 +4,6 @@ from .models import *
 
 
 class ToDoSerializers(serializers.ModelSerializer):
-    class meta:
-        model = ToDo
+    class Meta:
+        model =ToDo
         fields = ('id', 'Title', 'Description', 'Date', 'Completed')
